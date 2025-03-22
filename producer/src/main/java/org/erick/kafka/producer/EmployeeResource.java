@@ -25,7 +25,6 @@ public class EmployeeResource {
     @POST
     @Path("/create")
     @Produces(MediaType.APPLICATION_JSON)
-    @Transactional()
     public Employee createEmployee(Employee data) {
         employeeRequestEmitter.send(data);
         return data;

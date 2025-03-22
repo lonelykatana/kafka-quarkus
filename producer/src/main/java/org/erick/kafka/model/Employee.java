@@ -19,7 +19,6 @@ public class Employee {
     private LevelEnum level;
     private Integer sales;
     private Integer salary;
-    @JsonIgnore
     private Double bonus;
 
     public Employee() {
